@@ -1,5 +1,5 @@
 # General
-title:          Amy R. Wong 王蕊
+title:          Amy R. Wong
 description:    Scholar, Literary Critic, Professor, Psychoanalyst-in-Training
 url:            https://glennpoppe.github.io
 baseurl:        "/amyrwong"
@@ -14,7 +14,7 @@ sass:
 
 # Contact
 author:
-  name: Amy R. Wong 王蕊
+  name: Amy R. Wong
   email: amyreiwong@gmail.com
 
 # Gems
