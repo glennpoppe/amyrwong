@@ -1,8 +1,8 @@
 # General
 title:          Amy R. Wong 王蕊
 description:    Scholar, Literary Critic, Professor, Psychoanalyst-in-Training
-url:            http://amyrwong.org
-baseurl:        ""
+url:            https://glennpoppe.github.io
+baseurl:        "/amyrwong"
 
 # Navigation
 permalink:      /:slug
