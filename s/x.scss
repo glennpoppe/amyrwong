@@ -1,0 +1,238 @@
+---
+---
+
+// Writing
+.footnotes {
+  font-size: 15px;
+}
+
+.footnotes::before {
+  font-weight: 640;
+  content: "Notes:";
+}
+
+// Anchor links
+span.anchor {
+  opacity: 0;
+}
+
+*:hover>.anchor {
+  opacity: 1;
+}
+
+// Syntax
+.highlight table td {
+  padding: 5px;
+}
+.highlight table pre {
+  margin: 0;
+}
+.highlight,
+.highlight .w {
+  color: #24292f;
+}
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .kv {
+  color: #cf222e;
+}
+.highlight .gr {
+  color: #f6f8fa;
+}
+.highlight .gd {
+  color: #82071e;
+  background-color: #ffebe9;
+}
+.highlight .nb,
+.highlight .nc,
+.highlight .no,
+.highlight .nn {
+  color: #953800;
+}
+.highlight .sr,
+.highlight .na,
+.highlight .nt {
+  color: #116329;
+}
+.highlight .gi {
+  color: #116329;
+  background-color: #dafbe1;
+}
+.highlight .kc,
+.highlight .l,
+.highlight .ld,
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mx,
+.highlight .sb,
+.highlight .bp,
+.highlight .ne,
+.highlight .nl,
+.highlight .py,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm,
+.highlight .o,
+.highlight .ow,
+.highlight .gh,
+.highlight .gu {
+  color: #0550ae;
+}
+.highlight .s,
+.highlight .sa,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .sx,
+.highlight .s1,
+.highlight .ss {
+  color: #0a3069;
+}
+.highlight .nd,
+.highlight .nf,
+.highlight .fm {
+  color: #8250df;
+}
+.highlight .err {
+  color: #f6f8fa;
+  background-color: #82071e;
+}
+.highlight .c,
+.highlight .ch,
+.highlight .cd,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs,
+.highlight .gl,
+.highlight .gt {
+  color: #6e7781;
+}
+.highlight .ni,
+.highlight .si,
+.highlight .gs,
+.highlight .ge {
+  color: #24292f;
+}
+
+@media (prefers-color-scheme: dark) {
+  .highlight,
+  .highlight .w {
+    color: #c9d1d9;
+  }
+  .highlight .k,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kt,
+  .highlight .kv {
+    color: #ff7b72;
+  }
+  .highlight .gr {
+    color: #f0f6fc;
+  }
+  .highlight .gd {
+    color: #ffdcd7;
+    background-color: #67060c;
+  }
+  .highlight .nb,
+  .highlight .nc,
+  .highlight .no,
+  .highlight .nn {
+    color: #ffa657;
+  }
+  .highlight .sr,
+  .highlight .na,
+  .highlight .nt {
+    color: #7ee787;
+  }
+  .highlight .gi {
+    color: #aff5b4;
+    background-color: #033a16;
+  }
+  .highlight .kc,
+  .highlight .l,
+  .highlight .ld,
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .il,
+  .highlight .mo,
+  .highlight .mx,
+  .highlight .sb,
+  .highlight .bp,
+  .highlight .ne,
+  .highlight .nl,
+  .highlight .py,
+  .highlight .nv,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi,
+  .highlight .vm,
+  .highlight .o,
+  .highlight .ow {
+    color: #79c0ff;
+  }
+  .highlight .gh,
+  .highlight .gu {
+    color: #1f6feb;
+  }
+  .highlight .s,
+  .highlight .sa,
+  .highlight .sc,
+  .highlight .dl,
+  .highlight .sd,
+  .highlight .s2,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .sx,
+  .highlight .s1,
+  .highlight .ss {
+    color: #a5d6ff;
+  }
+  .highlight .nd,
+  .highlight .nf,
+  .highlight .fm {
+    color: #d2a8ff;
+  }
+  .highlight .err {
+    color: #f0f6fc;
+    background-color: #8e1519;
+  }
+  .highlight .c,
+  .highlight .ch,
+  .highlight .cd,
+  .highlight .cm,
+  .highlight .cp,
+  .highlight .cpf,
+  .highlight .c1,
+  .highlight .cs,
+  .highlight .gl,
+  .highlight .gt {
+    color: #8b949e;
+  }
+  .highlight .ni,
+  .highlight .si,
+  .highlight .ge,
+  .highlight .gs {
+    color: #c9d1d9;
+  }
+}

@@ -1,0 +1,28 @@
+# General
+title:          Amy R. Wong 王蕊
+description:    Scholar, Literary Critic, Professor, Psychoanalyst-in-Training
+url:            http://amyrwong.org
+baseurl:        ""
+
+# Navigation
+permalink:      /:slug
+
+# Minify CSS
+sass:
+  style: compressed
+  sourcemap: never
+
+# Contact
+author:
+  name: Amy R. Wong 王蕊
+  email: amyreiwong@gmail.com
+
+# Gems
+plugins:
+#  - jekyll-feed
+  - jekyll-sitemap
+
+highlighter: rouge
+
+exclude:
+  - new_post.sh

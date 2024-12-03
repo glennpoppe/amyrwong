@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if page.title -%}
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+    {% else -%}
+    <title>{{ site.title }} | {{ site.description }}</title>
+    <meta property="og:title" content="{{ site.title }}">
+    {% endif -%}
+    {% if page.excerpt -%}
+    <meta property="og:description" content="{{ page.excerpt | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
+    {% elsif page.description -%}
+    <meta property="og:description" content="{{ page.description }}">
+    {% else -%}
+    <meta property="og:description" content="{{ site.description }}">
+    {% endif -%}
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    {% if page.id -%}
+    <meta property="og:type" content="article">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/feed.xml' | absolute_url }}">
+    {% else -%}
+    <meta property="og:type" content="website">
+    {% endif -%}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/s/s.css">
+    {% if page.id -%}
+    <link rel="stylesheet" href="/s/x.css">
+    {% endif -%}
+  </head>
+  <body>
+    <header><a href="/">{{ site.title }}</a></header>
+    <nav>
+      <a href="/about">About</a><a href="/books">Books</a><a href="/otherwriting">Other Writing</a>
+    </nav>
+    <hr>
+    <main>
+      {{ content -}}
+    </main>
+    {% if page.id -%}
+    <script src="/s/anchors.js"></script>
+    {% endif -%}
+  </body>
+</html>
